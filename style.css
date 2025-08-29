@@ -1,0 +1,213 @@
+body {
+      font-family: 'Fredoka', sans-serif;
+      background-color: #fefefe;
+      overflow-x: hidden;
+    
+    }
+
+    /* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 12px 20px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Brand */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #13274F !important;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 55px;
+  width: 55px;
+  margin-right: 10px;
+}
+
+/* Nav Links */
+.nav-link {
+  color: #13274F !important;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  margin: 0 12px;
+}
+.nav-link:hover {
+  color: #FF6F61 !important;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #FF6F61;
+  left: 0;
+  bottom: -5px;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.nav-link.active {
+  color: #C5B358 !important;
+}
+.nav-link.active::after {
+  width: 100%;
+  background: #C5B358;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  filter: invert(20%) sepia(100%) saturate(2000%) hue-rotate(330deg) brightness(90%) contrast(90%);
+}
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #13274F, #C5B358, #FF6F61);
+      height: 100vh;
+      color: white;
+      text-align: center;
+      padding: 190px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin: 15px 0;
+    }
+    .hero .btn {
+      margin: 10px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+    .floating-emoji {
+      position: absolute;
+      font-size: 2rem;
+      animation: float 6s infinite ease-in-out;
+      opacity: 0.7;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    .emoji1 { top: 20%; left: 10%; }
+    .emoji2 { top: 60%; right: 15%; animation-delay: 2s; }
+    .emoji3 { bottom: 15%; left: 50%; animation-delay: 4s; }
+    .emoji4 { top: 30%; right: 40%; animation-delay: 1s; }
+    .emoji5 { top: 50%; left: 20%; animation-delay: 3s; }
+    .emoji6 { bottom: 25%; right: 30%; animation-delay: 5s; }
+    .emoji7 { top: 10%; right: 20%; animation-delay: 2.5s; }
+    .emoji8 { bottom: 20%; left: 30%; animation-delay: 4.5s; }
+    .emoji9 { top: 40%; left: 70%; animation-delay: 1.5s; }
+
+    /* Section Titles */
+    section {
+  /* position: relative; */
+  width: 100%;
+}
+
+
+
+section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 100%;
+  height: 60px;
+  background: inherit;
+  transform: skewY(-3deg);
+  z-index: -1;
+}
+
+    section h2 {
+       padding: 55px 20px 80px 20px; /* Increased top padding for navbar */
+      color: #13274F;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* About / Gallery / Contact Cards */
+  #about {
+  background: #FFF7E6;
+  height: 100vh;
+  width: 100%;
+}
+#gallery {
+  background: #F0F9FF;
+  width: 100%;
+   height: 100vh;
+}
+#contact {
+  background: #FFF0F5;
+  width: 100%;
+   height: 100vh;
+}
+
+
+    .info-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .info-card:hover {
+      transform: translateY(-8px);
+    }
+    .info-card i {
+      font-size: 2rem;
+      color: #FF6F61;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #13274F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Scroll-to-top */
+    #toTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #FF6F61;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px 16px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    #toTop:hover {
+      background: #C5B358;
+    }
