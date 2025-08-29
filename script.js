@@ -9,3 +9,22 @@
     toTop.onclick = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
+    // Scroll reveal
+const revealElements = document.querySelectorAll('.scroll-reveal');
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+  revealElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const revealPoint = 150; // Distance from bottom before revealing
+    if(elementTop < windowHeight - revealPoint){
+      el.classList.add('active');
+    }
+  });
+}
+
+// Run on scroll
+window.addEventListener('scroll', revealOnScroll);
+
+// Run on page load
+revealOnScroll();

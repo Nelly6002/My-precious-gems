@@ -2,8 +2,21 @@ body {
       font-family: 'Fredoka', sans-serif;
       background-color: #fefefe;
       overflow-x: hidden;
-     padding-top: 80px; /* Increased top padding for navbar */
+     padding-top: 80px; 
     }
+
+    /* Elements are hidden initially */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+/* When the element is in view */
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
     /* Navbar */
 .navbar {
@@ -142,7 +155,7 @@ section::after {
 }
 
     section h2 {
-       padding: 55px 20px 80px 20px; /* Increased top padding for navbar */
+       padding: 30px 20px 80px 20px; /* Increased top padding for navbar */
       color: #13274F;
       font-weight: 700;
       margin-bottom: 20px;
@@ -152,32 +165,127 @@ section::after {
     /* About / Gallery / Contact Cards */
   #about {
   background: #FFF7E6;
-  height: 100vh;
+  height: fit-content;
   width: 100%;
 }
 #gallery {
   background: #F0F9FF;
   width: 100%;
-   height: 100vh;
+    height: fit-content;
+    /* Gallery row centered */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual card */
+.gallery-row .info-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+
 }
 #contact {
   background: #FFF0F5;
   width: 100%;
-   height: 100vh;
+    height: fit-content;
 }
 
+/* Contact Form Styling */
+.contact-form {
+  background: #FFF4E6; /* soft pastel */
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
-    .info-card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .info-card:hover {
-      transform: translateY(-8px);
-    }
+.contact-form h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #13274F;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 2px solid #FFCDB2;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #FF6F61;
+  box-shadow: 0 0 10px rgba(255,111,97,0.2);
+}
+
+.contact-form button {
+  width: 100%;
+  background: #FF6F61;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #C5B358;
+  transform: translateY(-3px);
+}
+
+  /* About / Gallery / Contact Cards */
+.info-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Only the hovered card moves up */
+.info-card:hover {
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+/* Extra content hidden by default */
+.info-card .extra-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Show extra content only on hovered card */
+.info-card:hover .extra-content {
+  max-height: 200px; /* adjust height as needed */
+  opacity: 1;
+}
+
     .info-card i {
       font-size: 2rem;
       color: #FF6F61;
