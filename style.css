@@ -2,7 +2,7 @@ body {
       font-family: 'Fredoka', sans-serif;
       background-color: #fefefe;
       overflow-x: hidden;
-    
+     padding-top: 80px; /* Increased top padding for navbar */
     }
 
     /* Navbar */
@@ -81,7 +81,7 @@ body {
       height: 100vh;
       color: white;
       text-align: center;
-      padding: 190px 20px;
+      padding: 200px 20px;
       position: relative;
       overflow: hidden;
     }
@@ -123,7 +123,7 @@ body {
 
     /* Section Titles */
     section {
-  /* position: relative; */
+
   width: 100%;
 }
 
