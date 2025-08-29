@@ -87,6 +87,19 @@ body {
 .navbar-toggler-icon {
   filter: invert(20%) sepia(100%) saturate(2000%) hue-rotate(330deg) brightness(90%) contrast(90%);
 }
+.dropdown-menu {
+  background-color: #13274F !important;
+  border-radius: 12px;
+  border: none;
+}
+.dropdown-item {
+  color: white !important;
+}
+.dropdown-item:hover {
+  background-color: #FF6F61 !important;
+  color: white !important;
+}
+
 
     /* Hero Section */
     .hero {
