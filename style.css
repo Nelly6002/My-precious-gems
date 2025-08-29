@@ -181,6 +181,48 @@ section::after {
   height: fit-content;
   width: 100%;
 }
+/* Meals & Nutrition Collapsible */
+.nutrition-card {
+  cursor: pointer;
+}
+
+.nutrition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nutrition-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #13274F;
+}
+
+.chevron {
+  font-size: 1.8rem;
+  color: #FF6F61;
+  transition: transform 0.3s ease;
+}
+
+/* Hidden content */
+.nutrition-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.nutrition-card.active .nutrition-content {
+  max-height: 500px; /* adjust as needed */
+  opacity: 1;
+}
+
+.nutrition-card.active .chevron {
+  transform: rotate(90deg);
+}
+
 #gallery {
   background: #F0F9FF;
   width: 100%;

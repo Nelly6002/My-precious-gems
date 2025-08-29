@@ -28,3 +28,8 @@ window.addEventListener('scroll', revealOnScroll);
 
 // Run on page load
 revealOnScroll();
+
+function toggleNutrition() {
+  const card = document.querySelector('.nutrition-card');
+  card.classList.toggle('active');
+}
