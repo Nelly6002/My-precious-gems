@@ -29,7 +29,29 @@ window.addEventListener('scroll', revealOnScroll);
 // Run on page load
 revealOnScroll();
 
-function toggleNutrition() {
-  const card = document.querySelector('.nutrition-card');
-  card.classList.toggle('active');
+function toggleNutrition(element) {
+  const card = element.parentElement; // gets the clicked FAQ card
+  card.classList.toggle("active");
+
+  // also toggle the content & chevron
+  const content = card.querySelector(".nutrition-content");
+  const chevron = element.querySelector(".chevron");
+
+  content.classList.toggle("active");
+  chevron.classList.toggle("rotate");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const emojis = document.querySelectorAll(".floating-emoji");
+
+  emojis.forEach(emoji => {
+    // random horizontal position
+    const left = Math.random() * 90;
+   
+    const top = Math.random() * (document.body.scrollHeight - window.innerHeight - 200) + 200;
+
+    emoji.style.left = `${left}%`;
+    emoji.style.top = `${top}px`;
+    emoji.style.animationDelay = `${Math.random() * 5}s`;
+  });
+});
