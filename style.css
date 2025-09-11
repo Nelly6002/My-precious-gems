@@ -103,6 +103,7 @@ html,body {
 
 
     /* Hero Section */
+    
     .hero {
      background-image: url(pic/pexels-cottonbro-4039179.jpg);
   background-size: cover;        
@@ -114,7 +115,9 @@ html,body {
   padding: 200px 20px;
   position: relative;
   overflow: hidden;
+  
     }
+    
     .hero h1 {
       font-size: 3rem;
       font-weight: 700;
@@ -122,6 +125,8 @@ html,body {
     }
     .hero p {
       font-size: 1.3rem;
+      color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
       margin: 15px 0;
     }
     .hero .btn {
@@ -494,6 +499,8 @@ section::after {
 
   .hero p {
     font-size: 1rem;
+    color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
   }
   .navbar-brand span {
     font-size: small;
