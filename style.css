@@ -41,6 +41,9 @@ html,body {
   width: 55px;
   margin-right: 10px;
 }
+.collapse {
+  margin-right: 35px !important;
+  }
 
 /* Nav Links */
 .nav-link {
@@ -309,7 +312,7 @@ section::after {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.contact-form h5 {
+.contact-form h5{
   font-size: 1.2rem;
   margin-bottom: 15px;
   text-align: center;
@@ -317,7 +320,8 @@ section::after {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   width: 100%;
   border: 2px solid #FFCDB2;
   border-radius: 10px;
@@ -437,6 +441,12 @@ section::after {
   animation: sparkle 2s infinite;
 }
 
+#feedback{
+  background: #FFF9F3;
+  width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+}
 @keyframes sparkle {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(1.3); }
@@ -505,6 +515,9 @@ section::after {
   .navbar-brand span {
     font-size: small;
     font-weight: bold;
+  }
+  .collapse {
+  margin-right: 0px !important;
   }
 }
 

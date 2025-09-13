@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="pic/My precious gems.png" type="image/png">
+  <title>My Precious Gems 💎 Childcare Services</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts (Fredoka for playful look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+   <!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="pic/My precious gems.png" alt=""> 
+      <span>My Precious Gems 💎 Childcare Services</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+           <li><a class="dropdown-item" href="testimonials.html">Feedback/Testimonials</a></li>            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="#team">Our Team</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#enrollment">Enrollment Info</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="feedback">
+      <div class="scroll-reveal">
+  <div class="container py-5">
+    <h2>✨ Share Your Feedback ✨</h2>
+    </div>
+   
+  <div class="scroll-reveal">
+    <div class=" contact-form">
+         <h5>We’d love to hear from you! 💎</h5>
+      <form action="https://formspree.io/f/mldwvwlz" method="POST">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        
+        <textarea name="feedback" placeholder="Write your feedback..." rows="5" required></textarea>
+        
+        <select id="rating" name="rating" required>
+          <option value="">Your Rating</option>
+          <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+          <option value="4">⭐⭐⭐⭐ Very Good</option>
+          <option value="3">⭐⭐⭐ Good</option>
+          <option value="2">⭐⭐ Fair</option>
+          <option value="1">⭐ Poor</option>
+        </select>
+        
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+  <p>&copy; 2025 My Precious Gems. All Rights Reserved.</p>
+  <a href="https://www.instagram.com/mypreciousgems_uk/?hl=en" target="_blank">
+    <img src="pic/instagram.png" alt="Instagram" style="height:30px; width:30px; margin-top:10px;">
+  </a>
+</footer>
+
+
+  <!-- Scroll-to-top -->
+  <button id="toTop">⬆️</button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js">  </script>
+</body>
+</html>
