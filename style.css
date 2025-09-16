@@ -355,7 +355,14 @@ section::after {
   background: #C5B358;
   transform: translateY(-3px);
 }
-
+/* map section */
+.map{
+  width: 100%;
+  height: 450px;
+  border-radius: 15px; 
+  overflow: hidden; 
+  margin-bottom: 20px;
+}
   /* About / Gallery / Contact Cards */
 .info-card {
   background: #fff;
