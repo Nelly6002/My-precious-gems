@@ -3,7 +3,7 @@ html,body {
       background-color: #fefefe;
       overflow-x: hidden;
        max-width: 100%;
-     padding-top: 40px; 
+    
     }
 
     /* Elements are hidden initially */
@@ -104,7 +104,94 @@ html,body {
   color: white !important;
 }
 
+/* Newsletter Notice Bar */
+.newsletter-notice {
+  background: #ffefc2;
+  color: #003366;
+  text-align: center;
+  padding: 12px 20px;
+  margin-top: 81px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 2px solid #ffd700;
+  position: relative;
+}
 
+.newsletter-notice a {
+  color: #ff6f61;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.newsletter-notice button {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #003366;
+  cursor: pointer;
+}
+ /* Newsletter Page Styling */
+    .newsletter-section {
+      background: #fff9f3;
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+
+    .newsletter-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .newsletter-header h2 {
+      color: #13274F;
+      font-weight: 700;
+    }
+
+    .newsletter-card {
+      background: #ffffff;
+      border: 2px solid #ffd700;
+      border-radius: 15px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .newsletter-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .newsletter-card h4 {
+      color: #003366;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .newsletter-card p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .newsletter-date {
+      font-size: 0.9rem;
+      color: #ff6f61;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Decorative divider */
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: #ffd700;
+      margin: 15px auto;
+      border-radius: 5px;
+    }
     /* Hero Section */
     
     .hero {
@@ -116,6 +203,7 @@ html,body {
   color: white;
   text-align: center;
   padding: 200px 20px;
+  margin-top: 8x0px;
   position: relative;
   overflow: hidden;
   
