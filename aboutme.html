@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="pic/My precious gems.png" type="image/png">
-  <title>Newsletter |My Precious Gems 💎 Childcare Services</title>
+  <title>About Me |My Precious Gems 💎 Childcare Services</title>
   
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
   
 </head>
-<body>
+<body style="background-color:#FFB6B9">
 
   <!-- Navbar -->
 <!-- Navbar -->
@@ -50,10 +50,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="moreDropdown">
             <li><a class="dropdown-item" href="testimonials.html">Feedback/Testimonials</a></li>
-            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item " href="faq.html">FAQ</a></li>
             <li><a class="dropdown-item" href="#team">Our Team</a></li>
-             <li><a class="dropdown-item" href="aboutme.html">About Me</a></li>
-            <li><a class="dropdown-item active" href="newsletter.html">Newsletter</a></li>
+             <li><a class="dropdown-item active" href="aboutme.html">About Me</a></li>
+            <li><a class="dropdown-item" href="newsletter.html">Newsletter</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#enrollment">Enrollment Info</a></li>
           </ul>
@@ -63,40 +63,43 @@
   </div>
 </nav>
 
-<section class="newsletter-section">
+<section class="about-me scroll-reveal" id="about-me">
   <div class="container">
-    <div class="newsletter-header">
-      <h2>📢 Monthly Newsletter</h2>
-      <div class="divider"></div>
-      <p class="text-muted">Stay updated on what our little gems are doing each month!</p>
-    </div>
-       <!-- <div class="info-card nutrition-card">
-    <div class="nutrition-header"  onclick="toggleNutrition(this)">
-      <h3>September 2025 Newsletter</h3>
-      <i class="fa-solid fa-angle-right chevron"></i>
-    </div> -->
-    <!-- <div class="nutrition-content"> -->
-       <div class="newsletter-card">
-      <div class="newsletter-date">📅 September 2025</div>
-      <!-- <h4>Exciting Learning & Fun this Month</h4>
-      <p>
-        This month, our little gems will enjoy creative arts, outdoor fun, and early reading activities. 
-        We are also planning a <strong>library visit 📚</strong> and sensory play sessions.  
-      </p>
-      <p>
-        Parents are encouraged to check in daily for updates and feel free to contribute to our themes 💕.
-      </p> -->
-    </div>
-    <!-- </div> -->
-  <!-- </div> -->
-  
+    <div class="row align-items-center">
+      
+      <!-- Profile Picture -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="pic/Untitled design (3).png" alt="Lydia - Founder of My Precious Gems" class="img-fluid shadow-lg about-img">
+      </div>
 
+      <!-- About Text -->
+      <div class="col-md-8">
+        <h2 class="about-title">About Me</h2>
+        <p>
+          My name is <strong>Lydia</strong>, and I am a proud mother of three lovely children. 
+          I have worked in Early Years since 2018 as a Nursery Practitioner and 
+          established <strong>My Precious Gems</strong> in 2021.
+        </p>
+        <p>
+          I hold a <strong>Level 3 Qualification in Childcare and Education</strong> 
+          and currently serve as the <strong>Designated Safeguarding Lead</strong>.
+        </p>
+        <p>
+          I am <strong>First Aid trained</strong> with experience working with 
+          children with SEND. I am <strong>Ofsted registered</strong> with a 
+          <em>Good rating</em>.
+        </p>
+        <p>
+          I also hold certifications in <strong>Food Hygiene (Level 2)</strong>, 
+          <strong>Safeguarding</strong>, and <strong>Prevent Training</strong>. 
+          I am committed to continuous professional development to remain 
+          competent in providing safe, quality childcare.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Final Note -->
- 
-</section>
 <footer>
   <p>&copy; 2025 My Precious Gems. All Rights Reserved.</p>
   <a href="https://www.instagram.com/mypreciousgems_uk/?hl=en" target="_blank">
@@ -115,12 +118,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom JS -->
-   <script>
-  const today = new Date();
-  const currentMonth = today.getFullYear() + "-" + (today.getMonth() + 1);
-  localStorage.setItem("newsletterSeenMonth", currentMonth);
-</script>
-
   <script src="script.js">  </script>
 </body>
 </html>
