@@ -327,7 +327,7 @@ section::after {
 }
 
 .nutrition-card.active .nutrition-content {
-  max-height: 500px; /* adjust as needed */
+  max-height: fit-content; /* adjust as needed */
   opacity: 1;
 }
 
